@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:todoappusinghive/customwidget&variables/widgets.dart';
 
-class Addtaskpage extends StatefulWidget {
-  const Addtaskpage({super.key});
+class Editpage extends StatefulWidget {
+  const Editpage({super.key});
 
   @override
-  State<Addtaskpage> createState() => _AddtaskpageState();
+  State<Editpage> createState() => _EditpageState();
 }
 
-class _AddtaskpageState extends State<Addtaskpage> {
+class _EditpageState extends State<Editpage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,12 +18,11 @@ class _AddtaskpageState extends State<Addtaskpage> {
           width: 360,
           height: 805,
           color: Colors.black,
-
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Appbartodo('LIST NEW TASK', Colors.white, Colors.black, 'A'),
+              Appbartodo('EDIT A TASK', Colors.white, Colors.black, 'A'),
 
               SizedBox(
                 height: 430.66666666666663,
@@ -118,7 +117,7 @@ class _AddtaskpageState extends State<Addtaskpage> {
                 width: 300,
 
                 child: textpfd(
-                  'Click on Save button to Save the Todo',
+                  'Click on Save button to apply changes',
                   FontWeight.w400,
                   TextAlign.center,
                   18.666666666666664,

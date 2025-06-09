@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:todoappusinghive/customwidget&variables/widgets.dart';
 import 'package:todoappusinghive/pages/homepage.dart';
 
@@ -11,41 +10,41 @@ class Splashscreen extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Container(
-          width: 540,
-          height: 1208,
+          width: 360,
+          height: 805.333,
           color: Colors.black,
           child: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Container(
-                  height: 104,
-                  width: 438,
+                SizedBox(
+                  height: 69.333,
+                  width: 292,
                   child: textpfd(
                     "WELCOME TO TODO APP",
                     FontWeight.w900,
                     TextAlign.center,
-                    39,
+                    26,
                     Colors.white,
                   ),
                 ),
-                SizedBox(height: 146),
+                SizedBox(height: 97.333),
                 Container(
                   child: customtextfield("Enter your Name", Colors.white),
                 ),
-                SizedBox(height: 160),
+                SizedBox(height: 106.667),
                 Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(46)),
                   ),
-                  height: 83,
-                  width: 305,
+                  height: 55.333,
+                  width: 203.333,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.white,
                     ),
                     onPressed: () {
-                      Navigator.push(
+                      Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(builder: (context) => Homepage()),
                       );
@@ -54,19 +53,19 @@ class Splashscreen extends StatelessWidget {
                       'NEXT',
                       FontWeight.w700,
                       TextAlign.center,
-                      28,
+                      18.667,
                       Colors.black,
                     ),
                   ),
                 ),
 
-                SizedBox(height: 46),
+                SizedBox(height: 30.667),
                 Container(
                   child: textma(
                     'Enter your name to help us make your experience better.',
                     FontWeight.w300,
                     TextAlign.center,
-                    28,
+                    18.6678,
                     Colors.white,
                   ),
                 ),
