@@ -13,6 +13,7 @@ class _EditpageState extends State<Editpage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Center(
         child: Container(
           width: 360,
@@ -32,14 +33,15 @@ class _EditpageState extends State<Editpage> {
                   children: [
                     customtextfield('Title', Colors.white),
                     customtextfield('Due date', Colors.white),
-                    Container(
+
+                    SizedBox(
                       height: 310.66666666666663,
                       width: 312,
 
                       child: Stack(
                         alignment: Alignment.bottomCenter,
                         children: [
-                          Container(
+                          SizedBox(
                             height: 298,
                             width: 312,
                             child: TextField(
@@ -49,27 +51,22 @@ class _EditpageState extends State<Editpage> {
                               keyboardType: TextInputType.multiline,
 
                               // Style for the text the user types
-                              style: const TextStyle(color: Colors.white),
+                              style: GoogleFonts.montserratAlternates(
+                                // You can change this font
+                                color: Colors.white,
+                                fontSize: 18.667,
+                                fontWeight: FontWeight.w300,
+                              ),
 
                               // The cursor's color
                               cursorColor: Colors.white,
 
                               // This is where all the styling for the box itself happens
                               decoration: InputDecoration(
-                                // The text that appears on the border
-                                // label: const Text('Description'),
-
-                                // Style for the label text
-                                labelStyle: GoogleFonts.montserratAlternates(
-                                  color: Colors.white,
-                                  fontSize: 18.667,
-                                  fontWeight: FontWeight.w300,
-                                ),
-
                                 // The border when the TextField is not focused
                                 enabledBorder: OutlineInputBorder(
                                   borderSide: const BorderSide(
-                                    color: Color.fromARGB(255, 255, 255, 255),
+                                    color: Colors.white,
                                     strokeAlign: BorderSide.strokeAlignCenter,
                                     width: 0.667,
                                   ),

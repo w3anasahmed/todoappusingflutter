@@ -35,7 +35,7 @@ class _HomepageState extends State<Homepage> {
               ),
               SizedBox(height: 44),
 
-              Container(
+              SizedBox(
                 height: 435,
                 width: 312.00638834635413,
                 child: ListView.builder(

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:todoappusinghive/customwidget&variables/widgets.dart';
 import 'package:todoappusinghive/data/data.dart';
 

@@ -44,7 +44,7 @@ class Detailedview extends StatelessWidget {
                               Colors.white,
                             ),
                           ),
-                          Container(
+                          SizedBox(
                             height: 68,
 
                             child: textma(
@@ -91,7 +91,7 @@ class Detailedview extends StatelessWidget {
                       ),
                     ),
 
-                    Container(
+                    SizedBox(
                       height: 317.3333333333333,
                       width: 300,
 

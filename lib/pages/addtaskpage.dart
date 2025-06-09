@@ -13,6 +13,7 @@ class _AddtaskpageState extends State<Addtaskpage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Center(
         child: Container(
           width: 360,
@@ -33,14 +34,14 @@ class _AddtaskpageState extends State<Addtaskpage> {
                   children: [
                     customtextfield('Title', Colors.white),
                     customtextfield('Due date', Colors.white),
-                    Container(
+                    SizedBox(
                       height: 310.66666666666663,
                       width: 312,
 
                       child: Stack(
                         alignment: Alignment.bottomCenter,
                         children: [
-                          Container(
+                          SizedBox(
                             height: 298,
                             width: 312,
                             child: TextField(
@@ -50,7 +51,12 @@ class _AddtaskpageState extends State<Addtaskpage> {
                               keyboardType: TextInputType.multiline,
 
                               // Style for the text the user types
-                              style: const TextStyle(color: Colors.white),
+                              style: GoogleFonts.montserratAlternates(
+                                // You can change this font
+                                color: Colors.white,
+                                fontSize: 18.667,
+                                fontWeight: FontWeight.w300,
+                              ),
 
                               // The cursor's color
                               cursorColor: Colors.white,
